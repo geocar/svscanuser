@@ -1,0 +1,1 @@
+Use daemontools to allow regular users to have ~/.service/ directories (requires subsvscan and svc)

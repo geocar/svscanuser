@@ -1,0 +1,15 @@
+.TH svscanuser 1V v3.0 "Internet Connection, Inc." "Virtual Hosting Manual"
+.SH NAME
+svscanuser \- let users have a private ~/.service/ directory using daemontools
+.SH SYNOPSIS
+Put:
+.B svscanuser
+in a /var/svscanuser/run file, mark /var/svscanuser/run executable, and
+symlink it into /service.
+.SH DESCRIPTION
+.I svscanuser
+checks for ~/.service/ directory and uses chdirhome, runas, noroot,
+and subsvscan to manage it with a stock daemontools installation.
+.SH SEE ALSO
+subsvscan(8)
+http://cr.yp.to/daemontools.html
